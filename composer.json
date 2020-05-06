@@ -1,0 +1,45 @@
+{
+    "name": "gemz/geoip",
+    "description": "Get GeoIp informations from ip-api.com",
+    "keywords": [
+        "gemz",
+        "geoip"
+    ],
+    "homepage": "https://github.com/gemzio/geoip",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Stefan Riehl",
+            "email": "stefan@sriehl.com",
+            "homepage": "https://gemz.io",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "gemz/http-client": "^2.3"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^4.3",
+        "mockery/mockery": "^1.0",
+        "phpunit/phpunit": "^8.2",
+        "phpstan/phpstan": "^0.12.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gemz\\GeoIp\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Gemz\\GeoIp\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
